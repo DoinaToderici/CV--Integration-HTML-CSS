@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+p,
+.section_item span,
+.item_date,
+h5 {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+h1 span {
+  color: #feca03;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+h3,
+h4,
+#recommandations p span {
+  font-weight: 500;
+}
+h1,
+h4,
+main aside h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+aside {
+  width: 30vw;
+  background-color: #feca03;
+}
+.block_right {
+  width: 60vw;
+  padding: 0 5%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header aside {
+  display: flex;
+}
+header aside img {
+  width: 15vw;
+  box-shadow: 2px 2px 4px #000000;
+  border-radius: 50%;
+  margin: 10% auto;
+}
+
+header .block_right h2 span {
+  border-bottom: 4px solid #feca03;
+}
+
+main {
+  display: flex;
+}
+main aside {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+main aside h3 {
+  color: #feca03;
+  background-color: #404040;
+  text-align: center;
+  padding: 2% 0;
+}
+
+main aside .contentAside {
+  margin: 10%;
+}
+main aside .contentAside,
+main aside .contentAside a {
+  color: #5f5f5f;
+}
+main aside .contentAside a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+main aside #hobbies {
+  margin-bottom: 0;
+}
+
+main aside #hobbies .icons {
+  font-size: 3rem;
+  color: #404040;
+  text-align: center;
+  margin-bottom: 5%;
+}
+main aside #hobbies .icons i {
+  padding: 3%;
+  border-radius: 50%;
+  border: 3px solid #404040;
+  margin: 9% 1%;
+}
+main aside #hobbies .icons i:hover {
+  color: black;
+  border-color: black;
+}
+main .block_right .section {
+  margin-bottom: 5%;
+}
+.header_section {
+  display: flex;
+  border-bottom: 4px solid #feca03;
+  align-items: center;
+  font-size: 2.5rem;
+}
+.header_section i {
+  color: #feca03;
+}
+.header_section h3 {
+  margin: 2% 3%;
+}
+
+.section_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 2%;
+  color: #535353;
+}
+
+.item_date {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+.item_date input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.item_date .checkmark {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #feca03;
+  border-radius: 50%;
+}
+.item_date input:checked ~ .checkmark {
+  background-color: white;
+  border: 3px solid #feca03;
+}
+
+.item_date .checkmark:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #feca03;
+  display: none;
+}
+.item_date input:checked ~ .checkmark:after {
+  display: block;
+}
+.item_description {
+  width: 40vw;
+  margin-left: 5%;
+}
+.item_description h3,
+.item_description a {
+  color: #6e6e6e;
+}
+.item_description h3 a {
+  text-decoration: none;
+}
+.item_description a:hover {
+  text-decoration: underline;
+  color: #feca03;
+}
+
+.section_item span {
+  color: #aba8a8;
+}
+
+#recommandations {
+  display: flex;
+  justify-content: space-between;
+  color: #535353;
+}
+
+#recommandations > div {
+  width: 50vw;
+}
+
+@media only screen and (max-width: 1440px) {
+  p,
+  .section_item span,
+  .item_date,
+  h5 {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  aside .hobbies {
+    margin-top: 53vh;
+  }
+  .header_section {
+    border-bottom: 3px solid #feca03;
+  }
+  .item_date .checkmark {
+    width: 10px;
+    height: 10px;
+    top: 4px;
+  }
+  .item_date .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main aside #hobbies .icons {
+    font-size: 2rem;
+  }
+  main .header_section i {
+    font-size: 2rem;
+  }
+  .item_date .checkmark {
+    width: 6px;
+    height: 6px;
+    top: 6px;
+  }
+  .item_date .checkmark:after {
+    top: 1px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+  }
+  .item_date input:checked ~ .checkmark {
+    border: 2px solid #feca03;
+  }
+  .item_description {
+    width: 35vw;
+  }
+  .item_description span {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  aside {
+    width: 35vw;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+  header aside img {
+    width: 20vw;
+  }
+  main aside .contentAside {
+    margin: 6%;
+  }
+  main .header_section i {
+    font-size: 1.5rem;
+  }
+  aside #contact {
+    overflow-wrap: break-word;
+  }
+  aside .hobbies {
+    margin-bottom: 2%;
+  }
+  .block_right {
+    width: 61vw;
+    padding: 0 2%;
+  }
+
+  .header_section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section_item {
+    flex-direction: column;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .section_item .item_date {
+    padding: 0;
+    display: flex;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  .section_item .item_date span {
+    display: none;
+  }
+
+  .item_description {
+    width: 100%;
+    margin: 0;
+  }
+  .section_item .item_date label {
+    padding: 0;
+  }
+
+  input[type="radio"] + label::after {
+    content: none;
+  }
+  input[type="radio"] + label::before {
+    background: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  p,
+  h5 {
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  aside {
+    width: 100vw;
+  }
+  .block_right {
+    width: 96vw;
+  }
+
+  header {
+    display: block;
+  }
+  header aside img {
+    width: 50vw;
+    margin: 10% auto;
+    display: flex;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main aside .contentAside {
+    margin: 10% 3%;
+  }
+  main aside #hobbies {
+    margin-top: 5vh;
+  }
+
+  header .block_right {
+    padding: 10% 2%;
+  }
+  main .block_right .section {
+    margin-bottom: 15%;
+  }
+
+  #recommandations {
+    flex-direction: column;
+  }
+  #recommandations > div {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h3 {
+    font-size: 1.06rem;
+  }
+}
