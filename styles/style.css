@@ -6,6 +6,7 @@ body {
   width: 100vw;
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -374,6 +375,7 @@ main .block_right .section {
   h4 {
     font-size: 1.2rem;
   }
+
   aside {
     width: 100vw;
   }
@@ -384,10 +386,14 @@ main .block_right .section {
   header {
     display: block;
   }
-  header aside img {
-    width: 50vw;
-    height: auto;
+  header aside {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header aside img {
+    width: 200px;
+    height: 200px;
   }
   main {
     display: flex;
