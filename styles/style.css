@@ -387,7 +387,6 @@ main .block_right .section {
   header aside img {
     width: 50vw;
     height: auto;
-    margin: 10% auto;
     display: flex;
   }
   main {
