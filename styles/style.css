@@ -5,8 +5,8 @@ body {
   font-size: 16px;
   width: 100vw;
   margin: 0;
+  --primary_color: #feca03;
 }
-
 a {
   text-decoration: none;
 }
@@ -249,9 +249,6 @@ main .block_right .section {
   aside .hobbies {
     margin-top: 53vh;
   }
-  /* .header_section {
-    border-bottom: 3px solid #feca03;
-  } */
   .item_date .checkmark {
     width: 10px;
     height: 10px;
