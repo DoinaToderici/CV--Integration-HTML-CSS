@@ -124,8 +124,9 @@ main aside #hobbies {
 main aside #hobbies .icons {
   font-size: 3rem;
   color: #404040;
-  text-align: center;
   margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
 }
 main aside #hobbies .icons i {
   padding: 3%;
